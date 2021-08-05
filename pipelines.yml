@@ -53,7 +53,7 @@ pipelines:
             - mv $res_codeRepo_resourcePath/workshop-app/src/app/app.component.html.update $res_codeRepo_resourcePath/workshop-app/src/app/app.component.html
           onSuccess:
             - echo "Congrats the Docker image was built!"
-            - send_notification {{ .Values.PagerDuty.intName }} --text "Docker image built {{ .Values.app.dockerImageName }} Tag ${run_number}"
+            - send_notification {{ .Values.PagerDuty.intName }} --text "Docker image built {{ .Values.app.dockerImageName }}"
       - name: app_docker_push
         type: DockerPush
         configuration:
