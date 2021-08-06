@@ -45,6 +45,7 @@ pipelines:
             - name: codeRepo
           integrations:
             - name: {{ .Values.Artifactory.intName }}
+            - name: {{ .Values.PagerDuty.intName }}
         execution:
           onStart:
             - cd $res_codeRepo_resourcePath
@@ -63,6 +64,7 @@ pipelines:
           targetRepository: {{ .Values.Artifactory.devRepo }}
           integrations:
             - name:  {{ .Values.Artifactory.intName }}
+            - name: {{ .Values.PagerDuty.intName }}
           inputSteps:
             - name: app_docker_build
           outputResources:
@@ -101,6 +103,7 @@ pipelines:
           integrations:
             - name: {{ .Values.AWS.intName }}
             - name: {{ .Values.AWS.eks }}
+            - name: {{ .Values.PagerDuty.intName }}
           inputResources:
             - name: codeRepo
           inputSteps:
