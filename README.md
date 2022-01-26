@@ -1,5 +1,7 @@
 ## Product and Engineering Managers: Where is your software?
 
+[![Git](https://app.soluble.cloud/api/v1/public/badges/d502f84e-d6af-4ae5-a036-bcfde9c01390.svg?orgId=604336610407)](https://app.soluble.cloud/repos/details/github.com/jefferyfry/pagerduty-workshop?orgId=604336610407)  
+
 This GitHub repository contains the code for the Pagerduty and JFrog workshop hosted on [jfrog.awsworkshop.io](http://jfrog.awsworkshop.io). Visit [jfrog.awsworkshop.io](http://jfrog.awsworkshop.io) for the workshop instructions.
 
 PagerDuty and JFrog provide a hands-on demonstration of how you can configure your software delivery pipeline to provide real-time updates to your product managers and engineering managers. In this workshop, you will learn about the JFrog Cloud Platform and how to leverage JFrog Pipelines, Artifactory and Xray for managing your Software Development Lifecycle (SDLC) and bring DevOps to the cloud. Then you will see how JFrog's native integration with PagerDuty provides cloud DevOps observability. With PagerDuty's DevOps dashboards, product managers and engineering managers can get real-time status on the progress of their software features and bug fixes, understand how software builds are progressing and where they are being deployed. Users can see which software is being released, where and much more!
