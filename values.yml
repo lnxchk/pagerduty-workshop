@@ -1,17 +1,17 @@
 Artifactory:
   server: mwallspd.jfrog.io #change to your servername
-  intName: artifactory_integration
-  devRepo: workshop-docker-local
-  prodRepo: workshop-docker-prod-local
+  intName: ArtifactoryIntegration419
+  devRepo: workshop419-docker-local
+  prodRepo: workshop419-docker-prod-local
 PagerDuty:
-  intName: pagerduty_integration
+  intName: pagerduty_integration419
   pipelinesRoutingKey: 68ead16df0134902d05ceea1c03607de #change to your pagerduty pipelines integration key
 GitHub:
   path: lnxchk/pagerduty-workshop #change to your github username
-  gitProvider: github_integration
+  gitProvider: github_integration419
 AWS:
-  intName: aws_integration
-  eks: eks_integration
+  intName: aws_integration419
+  eks: EKSIntegration419
   region: us-west-2
 app:
   dockerImageName: mwallspd.jfrog.io/workshop-docker/pagerduty-workshop-app #change to your servername
